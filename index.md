@@ -1,4 +1,7 @@
 ---
+toc: true
+layout: home
+title: ""
 ---
 
 # About this Site
