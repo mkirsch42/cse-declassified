@@ -28,13 +28,25 @@ baseurl: "/cse-declassified" # the subpath of your site, e.g. /blog
 url: "https://mkirsch42.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-include-cache
 
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      comments: true
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "cse-declassified"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
